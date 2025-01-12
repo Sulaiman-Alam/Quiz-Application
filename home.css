@@ -22,31 +22,35 @@ header {
     margin-bottom: 20px;
 }
 
-header h1 {
+header>h1 {
     font-size: 3rem;
     font-weight: bold;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
 }
 
-header h3 {
+header>h3 {
     font-size: 1.5rem;
+    color: white;
     font-weight: 300;
     opacity: 0.9;
 }
 
-.container {
+.cont {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     max-width: 800px;
-    text-align: center;
+    text-align: left;
+    color: white;
 }
 
-.container p {
+.cont>p {
     font-size: 1.2rem;
     margin-bottom: 15px;
+    color: white;
 }
 
 ul {
@@ -55,15 +59,14 @@ ul {
     text-align: left;
 }
 
-ul li {
+ul>li {
     font-size: 1rem;
     margin: 10px 0;
     position: relative;
     padding-left: 20px;
 }
 
-ul li::before {
-    content: "\2713";
+ul>li::before {
     color: #ffdf00;
     font-size: 1.2rem;
     position: absolute;
@@ -71,7 +74,7 @@ ul li::before {
     top: 0;
 }
 
-.btn {
+.button {
     display: inline-block;
     background: #ffdf00;
     color: #000;
@@ -86,12 +89,12 @@ ul li::before {
     margin-top: 20px;
 }
 
-.btn:hover {
+.button:hover {
     background: #ffcc00;
     transform: scale(1.05);
 }
 
-.btn:active {
+.button:active {
     background: #e6b800;
     transform: scale(0.95);
 }
@@ -101,27 +104,13 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     opacity: 0.8;
+    color: white;
 }
 
 footer p {
     margin: 5px 0;
 }
 
-/* Responsive Design
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header h3 {
-        font-size: 1.2rem;
-    }
-
-    .container {
-        padding: 15px 20px;
-    }
-
-    ul li {
-        font-size: 0.9rem;
-    }
-} */
+.carousel {
+    padding: 25px;
+}
