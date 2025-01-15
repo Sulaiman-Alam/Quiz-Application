@@ -1,0 +1,29 @@
+.choice-container {
+      display: flex;
+      margin-bottom: 0.5rem;
+      width: 100%;
+      font-size: 1.8rem;
+      border: 0.1rem solid rgba(191, 206, 203, 0.24);
+      background-color: rgba(230, 250, 208, 0.713);
+      border-radius: 5px;
+}
+
+/*Modifies the selection letter box */
+.choice-prefix {
+      padding: 1.5rem 2.5rem;
+      background-color: rgba(248, 217, 46, 0.711);
+      color: black;
+}
+
+.choice-text {
+      padding: 1.5rem;
+
+}
+
+/* HOVER EFFECT */
+.choice-container:hover {
+      cursor: pointer;
+      box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+      transform: translateY(-0.1rem);
+      transition: transform 150ms;
+}
