@@ -9,11 +9,16 @@ server.on("listening", () => {
 });
 
 let urlObjects = [
-    { url: "/", filepath: "home.html" },
-    { url: "/home.css", filepath: "home.css" },
+    { url: "/", filepath: "Home/home.html" },
+    { url: "/home.css", filepath: "Home/home.css" },
+    { url: "/home.js", filepath: "Home/home.js" },
     { url: "/Images/james_holzhauer.jpg", filepath: "Images/james_holzhauer.jpg" },
     { url: "/Images/ken_jennings.jpg", filepath: "Images/ken_jennings.jpg" },
-    { url: "/Images/brad_rutter.jpg", filepath: "Images/brad_rutter.jpg" }
+    { url: "/Images/brad_rutter.jpg", filepath: "Images/brad_rutter.jpg" },
+    { url: "/Game/game.html", filepath: "Game/game.html" },
+    { url: "/Game/game.css", filepath: "Game/game.css" },
+    { url: "/Game/game.js", filepath: "Game/game.js" },
+    { url: "/app.css", filepath: "app.css" }
 ];
 
 server.on("request", (req, res) => {
