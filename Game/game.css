@@ -27,3 +27,46 @@
       transform: translateY(-0.1rem);
       transition: transform 150ms;
 }
+
+
+/* timer */
+
+.time-bar {
+      height: 37px;
+      width: 85px;
+      font-size: 2.2rem;
+      color: white;
+      margin-bottom: 1rem;
+      border-radius: 3px;
+      padding: 10px;
+      background-color: rgba(247, 242, 248, 0.533);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 50px;
+      top: 50px;
+}
+
+
+/* .timer {
+      height: 100%;
+      width: 100%;
+      background: white;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+} */
+
+.timer{
+      font-weight: bold;
+      
+}
+
+
+
+
+
+

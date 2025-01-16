@@ -5,11 +5,38 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 console.log(choices);
 
+const TimerDisplay = document.querySelector(".time-duration");
+
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0; // what question you are on
 let availableQuestions = [];  // empty array for remaining questions
+let timer = null; // declare timer variable
+const QUIZ_TIME_LIMIT = 15; // 15 seconds limit for each question
+let currentTime = QUIZ_TIME_LIMIT;
+
+// Timer reset function
+const resetTimer = () => {
+clearInterval(timer);
+currentTime = QUIZ_TIME_LIMIT;
+TimerDisplay.textContent = `${currentTime}s`;
+
+}
+
+
+// Timer start function
+const startTimer = () => {
+timer = setInterval(() => {
+currentTime--;
+ TimerDisplay.textContent = `${currentTime}s`;
+
+if (currentTime <= 0) {
+clearInterval(timer);
+}
+}, 1000);
+}
+
 
 // JSON file with questions referencing
 
@@ -184,6 +211,7 @@ startGame = () => {
       score = 0;
       availableQuestions = [...questions];
       console.log(availableQuestions);
+      // startTimer();
       getNewQuestion();
 };
 
@@ -197,9 +225,13 @@ getNewQuestion = () => { // function to reload a new question
       const questionIndex = Math.floor(Math.random() * availableQuestions.length);  // Get a random number for the newQuestion
         currentQuestion = availableQuestions[questionIndex];
         question.innerText = currentQuestion.question;
+        
+        resetTimer(); // Reset the timer
+          startTimer(); // Start the timer
 
         // Grab out choices and iterate 
         choices.forEach( choice => {
+        
             const letter = choice.dataset["letter"];
             choice.innerText = `${letter}: ${currentQuestion[letter]}`;
         });
@@ -211,6 +243,7 @@ getNewQuestion = () => { // function to reload a new question
 
 // Add event listeners to the choices
 choices.forEach( choice => {
+
 
       const letter = choice.dataset["letter"]; // Using data-letter
       choice.innerText = currentQuestion["letter"];
@@ -235,6 +268,7 @@ choices.forEach( choice => {
 
             // Delay before loading the next question
             setTimeout(() => {
+              // clearInterval(timer);// reset the timer
                   selectedOption.classList.remove(classToApply);
                   getNewQuestion();
             }, 1000);
@@ -242,3 +276,8 @@ choices.forEach( choice => {
       });
 })
 startGame();
+
+
+
+
+
