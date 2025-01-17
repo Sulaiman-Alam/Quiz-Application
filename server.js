@@ -18,7 +18,10 @@ let urlObjects = [
     { url: "/Game/game.html", filepath: "Game/game.html" },
     { url: "/Game/game.css", filepath: "Game/game.css" },
     { url: "/Game/game.js", filepath: "Game/game.js" },
-    { url: "/app.css", filepath: "app.css" }
+    { url: "/app.css", filepath: "app.css" },
+    { url: "/Results/results.html", filepath: "Results/results.html" },
+    { url: "/Results/results.css", filepath: "Results/results.css" },
+    { url: "/Results/results.js", filepath: "Results/results.js" }
 ];
 
 server.on("request", (req, res) => {
