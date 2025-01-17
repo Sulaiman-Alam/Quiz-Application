@@ -25,9 +25,13 @@ To run the server on VS Code:
 
 ## Team Contributions/Challenges
 
-
+Our team is made up of four aspiring computer scientists, and we each had our respective roles in this project. 
+- Sulaiman Alam: Focussed on the home page of the application as well as coding the server.js file. Main challenge faced was trying to code the server.js file in order to show the HTML/CSS and JS of every page and the images (as well as after reorganizing the files into separate folders). 
+- Paulo Criollo: 
+- Jenny Zheng:
+- Anjiya Shrestha: 
 
 ## Next Steps
 
-Given that this is only a beginner project, our hope is to in the future expand it even further with new updates. For example, after we get the first version running, next we intend to use Express.js to streamline the process of running the server.
+Given that this is only a beginner project, our hope is to in the future expand it even further with new updates. For example, after we get the first version running, next we intend to use Express.js to streamline the process of running the server. Additionally, we hope to remove the usage of a separate json file for the random questions. Rather we will attempt to use an API that has all sorts of random multiple choice questions, so when a user tries a quiz they get even more random questions each time. Furthermore, our hope is to add even more features to future updates of this application, such as adding different difficulty settings for the questions, possibly organizing by category, or maybe even adding various modes of the quizzes. The possibilities are inherently endless, and we hope this project allows us to dive even deeper into full stack application development and possibly inspires other prospective Computer Science Students to follow suit :D 
 
