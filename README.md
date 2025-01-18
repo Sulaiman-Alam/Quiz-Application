@@ -29,7 +29,8 @@ Our team is made up of four aspiring computer scientists, and we each had our re
 - Sulaiman Alam: Focused on the home page of the application as well as coding the server.js file. Main challenge faced was trying to code the server.js file in order to show the HTML/CSS and JS of every page and the images (as well as after reorganizing the files into separate folders). 
 - Paulo Criollo: 
 - Jenny Zheng: Focused on the results page of the application and coding the parts that allowed it to show the specific user's name and score on this page. 
-- Anjiya Shrestha: 
+- Anjiya Shrestha: Focused on the timer section
+ of the game, making sure the timer is shown and resets on each question and also doing the nav and make sure its works.
 
 ## Next Steps
 

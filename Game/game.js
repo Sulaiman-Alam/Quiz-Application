@@ -222,7 +222,6 @@ startGame = () => {
       score = 0;
       availableQuestions = [...questions];
       console.log(availableQuestions);
-      // startTimer();
       getNewQuestion();
 };
 
@@ -306,11 +305,11 @@ choices.forEach( choice => {
 
             // Delay before loading the next question
             setTimeout(() => {
-              // clearInterval(timer);// reset the timer
+              // clearInterval(timer);// stops the timer
                   selectedOption.classList.remove(classToApply);
                   getNewQuestion();
             }, 1000);
-
+           
       });
 })
 startGame();
