@@ -1,5 +1,16 @@
 // Reference top the question
 
+// // This is the new stuff Jenny added:
+// const readUsers = () => {
+//   const usersJSON = localStorage.getItem("users");
+//   return usersJSON ? JSON.parse(usersJSON) : []; // Return parsed users or an empty array
+// };
+
+
+// const writeUsers = (users) => {
+//   localStorage.setItem("users", JSON.stringify(users)); // Save the users array as JSON
+// };
+
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
@@ -217,9 +228,36 @@ startGame = () => {
 
 getNewQuestion = () => { // function to reload a new question
 
-      if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-            return alert(`Game over! Your score: ${score}`);
-          }
+  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    // return alert(`Game over! Your score: ${score}`);
+  
+    // // This is the new stuff Jenny added:
+    // let name = prompt("Your quiz is over, please enter your name to get your score:");
+    // let users = readUsers();
+
+
+    // if (name !== null && name.trim() !== "") {
+    //   const currentUser = {
+    //     name: name.trim(),
+    //     score: score, 
+    //   };
+
+    //   // Save current user to localStorage
+    //   localStorage.setItem("currentUser", JSON.stringify(currentUser));
+
+
+    //   // Add current user to the leaderboard
+    //   users.push(currentUser);
+    //   writeUsers(users);
+
+
+    //   alert("Your score has been saved!");
+    // } 
+    // else {
+    //   alert("No name entered. Score not saved.");
+    // }
+    // window.location.replace("/Results/results.html");
+  }
        
       questionCounter++;
       const questionIndex = Math.floor(Math.random() * availableQuestions.length);  // Get a random number for the newQuestion
