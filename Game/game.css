@@ -58,8 +58,8 @@ body {
       align-items: center;
       justify-content: center;
       position: absolute;
-      right: 350px;
-      top: 310px;
+      right: 100px;
+      top: 172px;
       animation: breathing 1.5s ease-in-out infinite;
       
     }

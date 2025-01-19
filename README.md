@@ -34,7 +34,7 @@ Our team is made up of four aspiring computer scientists, and we each had our re
 - Jenny Zheng: Focused on the results page of the application and coding the parts that allowed it to show the specific user's name and score on this page.
   
 - Anjiya Shrestha: Focused on the timer section
- of the game, making sure the timer is shown and resets on each question and also doing the nav and make sure its works.
+ of the game, making sure the timer is shown and resets on each question and also doing the nav and make sure it works.
 
 ## Next Steps
 
