@@ -26,9 +26,13 @@ To run the server on VS Code:
 ## Team Contributions/Challenges
 
 Our team is made up of four aspiring computer scientists, and we each had our respective roles in this project. 
-- Sulaiman Alam: Focused on the home page of the application as well as coding the server.js file. Main challenge faced was trying to code the server.js file in order to show the HTML/CSS and JS of every page and the images (as well as after reorganizing the files into separate folders). 
-- Paulo Criollo: 
-- Jenny Zheng: Focused on the results page of the application and coding the parts that allowed it to show the specific user's name and score on this page. 
+
+- Sulaiman Alam: Focused on the home page of the application as well as coding the server.js file. Main challenge faced was trying to code the server.js file in order to show the HTML/CSS and JS of every page and the images (as well as after reorganizing the files into separate folders).
+  
+- Paulo Criollo: Took the challenge of making the quiz gamepage functionality with "correct" and "incorrect" feedback. Added functions to retrieve a new question and new answer options from the template questions given. Added timer decision after receiving and answer or not. Added a progress bar, questionCounter and scoreCount, nav-bar and footer for gamepage as well. Main challenge faced, fetching the JSON template questions(for some reason the hardcoded questions work but by fetching from json file tends to cause a lot of errors).
+  
+- Jenny Zheng: Focused on the results page of the application and coding the parts that allowed it to show the specific user's name and score on this page.
+  
 - Anjiya Shrestha: Focused on the timer section
  of the game, making sure the timer is shown and resets on each question and also doing the nav and make sure its works.
 
