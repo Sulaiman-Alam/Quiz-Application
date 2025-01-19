@@ -2,7 +2,7 @@
 
 ## Overview
 
-Hey there! Welcome to ThinkStorm! This is a collaborative project where we use HTML/CSS and JavaScript (Node.js) to design and create a beginner full stack project. This projecr entails a quiz application which randomly choose questions (currently obtaining questions hard-coded into our js file) and outputs them to the users to answer. Afterwards, the user will get a score of how many they got correct.
+Hey there! Welcome to ThinkStorm! This is a collaborative project where we use HTML/CSS and JavaScript (Node.js) to design and create a beginner full stack project. This project entails a quiz application which randomly choose questions (currently obtaining questions hard-coded into our js file) and outputs them to the users to answer. Afterwards, the user will get a score of how many they got correct.
 
 With regards to technologies used, we currently have HTML/CSS for the frontend and JavaScript (Node.js) for the backend and for running the server. Alongside this, we have used technologies such as BootStrap and CHATGPT to obtain and refine various portions of the code.
 
