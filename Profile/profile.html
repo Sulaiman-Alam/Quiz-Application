@@ -17,7 +17,7 @@
        crossorigin="anonymous"></script>
 
 
-   <link rel="stylesheet" href="results.css" />
+   <link rel="stylesheet" href="profile.css" />
 </head>
 
 
@@ -30,7 +30,7 @@
     <ul class = "nav-links">
         <li><a href="/Home/home.html">Home</a></li>
         <li><a href="/Game/game.html">Game</a></li>
-        <li><a href="/Profile/profile.html">Profile</a></li>
+       
         
      </ul>
 </div>
@@ -40,18 +40,33 @@
 
    <div>
        <header>
-           <h1>Results Of Your Quiz!</h1>
+           <!-- <h1>profile</h1> -->
        </header>
    </div>
 
 
-   <div class="cont">
-       <strong>Name: </strong><span id="currentUser"></span>
-       <br>
-       <strong>Score: </strong><span id="score"> </span> out of <span id="total"> </span>
-       <br>
-       <strong>Feedback: </strong><span id="feedback"></span></li>
-   </div>
+   <div class="container">
+    <h1>Welcome, <span id="currentUser"></span></h1>
+    
+    <div class="profile-section">
+        <h2>Game History</h2>
+        <table id="playHistory">
+            <thead>
+                <tr>
+                    <th>Quiz Date</th>
+                    <th>Score</th>
+                    <span id="score"> </span> out of <span id="total"> </span>
+
+                    <!-- <th>Category</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be loaded here dynamically -->
+
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
    <div>
@@ -72,7 +87,7 @@
        crossorigin="anonymous"></script>
 
 
-   <script src="results.js"></script>
+   <script src="profile.js"></script>
 </body>
 
 
