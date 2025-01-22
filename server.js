@@ -33,12 +33,6 @@ let urlObjects = [
     { url: "/Results/results.css", filepath: "Results/results.css" },
     { url: "/Results/results.js", filepath: "Results/results.js" },
 
-    { url: "/Profile/profile.html", filepath: "Profile/profile.html" },
-    { url: "/Profile/profile.css", filepath: "Profile/profile.css" },
-    { url: "/Profile/profile.js", filepath: "Profile/profile.js" }
-
-
-    // { url: "/Home/Profile/profile.html", filepath: "Home/Profile/profile.html" },
 
 ];
 
